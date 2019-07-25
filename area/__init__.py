@@ -1,14 +1,10 @@
 from __future__ import division
 
 import json
-from math import pi, sin
+from math import pi, sin, radians
 
 __version__ = '1.1.1'
 WGS84_RADIUS = 6378137
-
-
-def rad(value):
-    return value * pi / 180
 
 
 def ring__area(coordinates):
@@ -51,7 +47,7 @@ def ring__area(coordinates):
             p2 = coordinates[middle_index]
             p3 = coordinates[upper_index]
 
-            _area += (rad(p3[0]) - rad(p1[0])) * sin(rad(p2[1]))
+            _area += (radians(p3[0]) - radians(p1[0])) * sin(radians(p2[1]))
 
         _area = _area * WGS84_RADIUS * WGS84_RADIUS / 2
 
@@ -92,3 +88,7 @@ def area(geometry):
             _area += area(geometry['geometries'][i])
 
     return _area
+
+def area_from_lat_lon_list(latitude, longitude):
+    coordinates = [coodinates_pair for coodinates_pair in zip(longitude, latitude)]
+    return ring__area(coordinates)
