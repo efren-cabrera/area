@@ -1,28 +1,30 @@
-geodesic-area
+geoarea
 ============
 
 .. image:: https://travis-ci.org/efren-cabrera/area.svg?branch=master
     :target: https://travis-ci.org/efren-cabrera/area
 
-Calculate the area inside of any `GeoJSON <http://geojson.org/>`_ geometry. This is a port of Mapbox's `geojson-area <https://github.com/mapbox/geojson-area>`_ for Python.
+This is a fork from `geojson-area (python) <https://github.com/scisco/area>`_. 
+Calculate the area from lists of latitude and longitude coordinates.
 
 Installation
 ------------
 
 .. code::
 
-  $ pip install area
+  $ pip install +git+https://github.com/efren-cabrera/geoarea
 
 Usage
 -----
 
-Simply pass a geojson string or python dictionary to the area function and get the area.
+Simply pass a list of latitude and longitude
 
 .. code::
 
-  >>> from area import area
-  >>> obj = {'type':'Polygon','coordinates':[[[-180,-90],[-180,90],[180,90],[180,-90],[-180,-90]]]}
-  >>> area(obj)
+  >>> from geoarea import geoarea
+  >>> latitude_world = [-90, 90, 90, -90, -90]
+  >>> longitude_world = [-180, -180, 180, 180, -180]  
+  >>> geoarea(latitude_world, longitude_world)
   511207893395811.06
 
 Test
@@ -36,4 +38,11 @@ Test
 Credit
 ------
 
+- `geojson-area (python) <https://github.com/scisco/area>`_
 - `geojson-area <https://github.com/mapbox/geojson-area>`_
+
+
+References
+----------
+
+- https://trs.jpl.nasa.gov/bitstream/handle/2014/41271/07-0286.pdf
