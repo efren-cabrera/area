@@ -21,10 +21,10 @@ Simply pass a list of latitude and longitude
 
 .. code::
 
-  >>> from geoarea import geoarea
+  >>> from geoarea import area
   >>> latitude_world = [-90, 90, 90, -90, -90]
   >>> longitude_world = [-180, -180, 180, 180, -180]  
-  >>> geoarea(latitude_world, longitude_world)
+  >>> area(latitude_world, longitude_world)
   511207893395811.06
 
 Test
