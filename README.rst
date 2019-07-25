@@ -1,7 +1,7 @@
-geojson-area
+geodesic-area
 ============
 
-.. image::https://travis-ci.org/efren-cabrera/area.svg?branch=master
+.. image:: https://travis-ci.org/efren-cabrera/area.svg?branch=master
     :target: https://travis-ci.org/efren-cabrera/area
 
 Calculate the area inside of any `GeoJSON <http://geojson.org/>`_ geometry. This is a port of Mapbox's `geojson-area <https://github.com/mapbox/geojson-area>`_ for Python.
