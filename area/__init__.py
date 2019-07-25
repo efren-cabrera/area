@@ -12,7 +12,7 @@ def _ring_area(coordinates) -> float:
     Reference:
         Robert. G. Chamberlain and William H. Duquette, "Some Algorithms for
         Polygons on a Sphere", JPL Publication 07-03, Jet Propulsion
-        Laboratory, Pasadena, CA, June 2007 http://trs-new.jpl.nasa.gov/dspace/handle/2014/40409
+        Laboratory, Pasadena, CA, June 2007 https://trs.jpl.nasa.gov/bitstream/handle/2014/41271/07-0286.pdf
 
     @Returns
 
