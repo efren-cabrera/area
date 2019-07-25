@@ -1,7 +1,7 @@
 import json
 import unittest
 
-from area import area
+from geoarea import area
 
 
 f = open('illinois.json')
