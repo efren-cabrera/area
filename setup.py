@@ -5,7 +5,7 @@ with open('README.md', encoding='utf-8') as f:
 
 
 setup(name='geoarea',
-      version="V0.1.2",
+      version="V0.1.3",
       description="Calculate the area from latitude longitude coordinates list",
       long_description_content_type='text/markdown',
       long_description=readme,      

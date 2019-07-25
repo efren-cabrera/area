@@ -10,7 +10,7 @@ Installation
 ------------
 
 ```
-  $ pip install git+https://github.com/efren-cabrera/geoarea
+  $ pip install geoarea
 ```
 
 Usage
