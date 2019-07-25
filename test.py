@@ -7,19 +7,6 @@ from area import area
 f = open('illinois.json')
 illinois = json.loads(f.read())
 
-world = {
-    'type': 'Polygon',
-    'coordinates': [
-        [
-            [-180, -90],
-            [-180, 90],
-            [180, 90],
-            [180, -90],
-            [-180, -90]
-        ]
-    ]
-}
-
 latitude_world = [-90, 90, 90, -90, -90]
 longitude_world = [-180, -180, 180, 180, -180]
 
