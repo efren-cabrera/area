@@ -92,3 +92,7 @@ def area(geometry):
             _area += area(geometry['geometries'][i])
 
     return _area
+
+def area_from_lat_lon_list(latitude, longitude):
+    coordinates = [coodinates_pair for coodinates_pair in zip(longitude, latitude)]
+    return polygon__area([coordinates])
