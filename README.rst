@@ -12,7 +12,7 @@ Installation
 
 .. code::
 
-  $ pip install +git+https://github.com/efren-cabrera/geoarea
+  $ pip install git+https://github.com/efren-cabrera/geoarea
 
 Usage
 -----
