@@ -3,9 +3,10 @@ from setuptools import setup
 
 with codecs_open('README.rst', encoding='utf-8') as f:
     readme = f.read()
-    
+
+
 setup(name='geoarea',
-      version=version,
+      version="V0.1.0",
       description="Calculate the area from latitude longitude coordinates list",
       long_description=readme,           
       url='https://github.com/efren-cabrera/geoarea',
