@@ -1,28 +1,14 @@
 from codecs import open as codecs_open
 from setuptools import setup
 
-
-# Parse the version from the affine module.
-with open('area/__init__.py') as f:
-    for line in f:
-        if "__version__" in line:
-            version = line.split("=")[1].strip()
-            version = version.strip('"').strip("'")
-            break
-
 with codecs_open('README.rst', encoding='utf-8') as f:
     readme = f.read()
-
-
+    
 setup(name='geoarea',
       version=version,
-      description="Calculate the area inside of any GeoJSON geometry. This is a port of Mapbox's" +
-                  "geojson-area for Python",
-      long_description=readme,
-      keywords='geojson area geometry',
-      author='Alireza J (Scisco)',
-      author_email='scisco7@gmail.com',
-      url='https://github.com/scisco/area',
+      description="Calculate the area from latitude longitude coordinates list",
+      long_description=readme,           
+      url='https://github.com/efren-cabrera/geoarea',
       license='BSD-2-Clause',
       packages=['area'],
       include_package_data=True,
