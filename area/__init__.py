@@ -41,7 +41,7 @@ def _ring_area(coordinates) -> float:
         p3 = coordinates[upper_index]
 
         area += (radians(p3[0]) - radians(p1[0])) * sin(radians(p2[1]))
-    area *= WGS84_RADIUS**2 / 2
+    area = area * WGS84_RADIUS * WGS84_RADIUS  / 2
     return area
 
 def area(latitude, longitude) -> float:
