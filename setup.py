@@ -14,7 +14,7 @@ with codecs_open('README.rst', encoding='utf-8') as f:
     readme = f.read()
 
 
-setup(name='area',
+setup(name='geoarea',
       version=version,
       description="Calculate the area inside of any GeoJSON geometry. This is a port of Mapbox's" +
                   "geojson-area for Python",
