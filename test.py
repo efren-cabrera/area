@@ -4,7 +4,7 @@ import unittest
 from area import area, area_from_lat_lon_list
 
 
-f = open('illinois.json', 'U')
+f = open('illinois.json')
 illinois = json.loads(f.read())
 
 world = {
