@@ -1,14 +1,16 @@
-from codecs import open as codecs_open
 from setuptools import setup
 
-with codecs_open('README.rst', encoding='utf-8') as f:
+with open('README.md', encoding='utf-8') as f:
     readme = f.read()
 
 
 setup(name='geoarea',
-      version="V0.1.0",
+      version="V0.1.2",
       description="Calculate the area from latitude longitude coordinates list",
-      long_description=readme,           
+      long_description_content_type='text/markdown',
+      long_description=readme,      
+      author="Efren Cabrera",
+      author_email="efren@cabrera.dev",
       url='https://github.com/efren-cabrera/geoarea',
       license='BSD-2-Clause',
       packages=['geoarea'],
@@ -20,9 +22,7 @@ setup(name='geoarea',
           'Intended Audience :: Developers',
           'Intended Audience :: Science/Research',
           'Topic :: Scientific/Engineering :: GIS',
-          'License :: OSI Approved :: BSD License',
-          # Specify the Python versions you support here. In particular, ensure
-          # that you indicate whether you support Python 2, Python 3 or both.          
+          'License :: OSI Approved :: BSD License',                   
           'Programming Language :: Python :: 3.7',
-      ],
-      )
+      ]
+)
